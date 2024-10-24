@@ -5,6 +5,8 @@ class InstructionsController < ApplicationController
 
         if @instruction.save
             render json: {"user" => @instruction.user, "assistant" => @instrcution.assistant}
+        else
+            render json: {"error" => "Oh, there was a problem"}, status: 500
         end
     end
 
