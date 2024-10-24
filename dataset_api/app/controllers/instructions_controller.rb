@@ -24,5 +24,8 @@ class InstructionsController < ApplicationController
     end 
 
     def all
+        @instructions = Instruction.all 
+
+        render json: @instructions
     end
 end
