@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   post '/instructions' => 'instructions#new'
+  post '/instructions/:id' => 'instructions#update'
 end
