@@ -6,4 +6,5 @@ Rails.application.routes.draw do
 
   post '/instructions' => 'instructions#new'
   post '/instructions/:id' => 'instructions#update'
+  get '/instructions' => 'instructions#all'
 end
